@@ -1,0 +1,92 @@
+* {
+    padding : 0;
+    margin : 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1E2432;
+}
+
+#titre {
+    text-align: center;
+    margin:20px 0 40px 0;
+    color: #FFD966;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grid {
+    border : 1px solid green;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    color: white;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.container {
+    border: 1px solid red;
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    margin: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.espace {
+    margin: 30px;
+}
+
+.space {
+    margin: 100px;
+}
+
+nav {
+    padding: 20px;
+    margin: 70px 0 70px 0;
+    display: flex;
+    justify-content: center;
+    gap : 50px;
+    }
+  
+  nav a {
+    text-align: center;
+    width : 100px;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #FFD966;
+    opacity: 0.9;
+    color:#1E2432;
+    transition: all 0.4s ease;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  
+    &:hover {
+      transform: scale(1.1);
+      background-color: #1E2432;
+      color: #FFD966;
+    }
+  }
+
+
+  .un {
+    transition: all 0.8s ease-in-out;
+    position: relative;
+    left: -15px;
+    top: -18px;
+    width: 50px;
+    height: 70px;
+    box-shadow: rgba(135, 206, 235, 0.25) 0px 14px 28px, rgba(135, 206, 235, 0.22) 0px 10px 10px;
+    background-position: center;
+}
+    

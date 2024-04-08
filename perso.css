@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding: 10px;
+    color : #FFD966;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #1E2432;
+}
+
+.corps {
+    font-size: 17px;
+    margin :auto;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #1E2432;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color : #F5F5DC;
+    float: right;
+    display: grid;
+    max-width: 700px;
+    text-align: left;
+    gap: 10px;
+    padding-bottom: 50px;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 1s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(145, 126, 94, 0.8);
+      border: none;
+    }
+}
+
+.corps2 {
+  font-size: 17px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #1E2432;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color : #F5F5DC;
+  float: right;
+  display: grid;
+  max-width: 700px;
+  text-align: left;
+  gap: 10px;
+  padding-bottom: 50px;
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 1s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: RGBA(116,158,164,1);
+    border: none;
+  }
+}
+
+
+.info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pp {
+  margin: auto;
+  max-height: 500px;
+  margin-top: 50px;
+}
+
+.stand {
+  margin: auto;
+  max-height: 500px;
+}
+
+.container {
+    position: absolute;
+    left :-25px;
+    background-color: RGBA(116,158,164,0.5);
+    border: 1px white solid;
+    transform: rotate(-10deg);
+    width: 107.5%;
+  }
+  
+  .banner {
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-top: 30px;
+    color : white;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: defilement 10s linear infinite; 
+  }
+  
+  .banner span {
+    display: inline-block; /
+  }
+  
+  @keyframes defilement {
+    0% {
+      transform: translateX(100%); /* Débute l'animation à droite de l'écran */
+    }
+    100% {
+      transform: translateX(-100%); /* Termine l'animation à gauche de l'écran */
+    }
+  }
+ 
+@media  screen and (max-width: 450px) {
+  .container {
+    position: absolute;
+    left :-25px;
+    background-color: RGBA(116,158,164,0.5);
+    border: 1px white solid;
+    transform: rotate(-10deg);
+    width: 108.5%;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+}
+
+
+  .border {
+    margin : 100px 0 100px 0;
+    height : 1px;
+    border-top : 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+nav {
+  padding: 20px;
+  margin: 100px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  gap : 50px;
+  }
+
+nav a {
+  text-align: center;
+  width : 100px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #FFD966;
+  opacity: 0.9;
+  color:#1E2432;
+  transition: all 0.4s ease;
+  font-family: "Reddit Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #1E2432;
+    color: #FFD966;
+  }
+}
+
+#bannertg {
+  font-size: 45px;
+}
+
+/*Jotaro Kujo*/
+#jk {
+  background-color: rgba(134,38,53,0.7);
+}
+
+#cjk:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+#c2jk:hover {
+  background-color: rgba(171,154,204,0.5);
+}
+/*Josuke Higashikata*/
+#jh {
+  background-color: rgba(70,44,97,0.7);
+}
+
+#cjh:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+#c2jh:hover {
+  background-color: rgba(169,213,212,0.5);
+}
+/*Giorno Giovanna*/
+#gg {
+  background-color: rgba(207,57,96,0.7);
+}
+
+#cgg:hover {
+  background-color: rgba(38,60,128,0.5);
+}
+
+#c2gg:hover {
+  background-color: rgba(240,227,162,0.5);
+}
+
+#c3gg:hover {
+  background-color: rgba(147,223,251,0.3);
+}

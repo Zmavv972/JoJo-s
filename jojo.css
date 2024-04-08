@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #708090;
+}
+
+nav {
+    margin-top : 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height : 100px;
+    flex-direction: column;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 30px;
+    padding : 10px;
+    background-color:  #AEC6CF;
+    border-radius: 20px;
+    color: white;
+    transition : all 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    &:hover{
+        transform: scale(1.1);
+        color : #AEC6CF;
+        background-color:#F2F2F2 ;
+    }
+}
+
+.grid-container {
+    display: grid;
+}
+
+.flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+#part1 {
+    background-image: url('https://birdmanreview.files.wordpress.com/2018/12/jojo1banner.jpg');
+    transition: all 0.8s ease-in-out;
+    max-width: 500px;
+    box-shadow: rgba(250, 235, 215, 0.25) 0px 14px 28px, rgba(250, 235, 215, 0.22) 0px 10px 10px;
+
+    &:hover{
+        background-image: url('https://wallpapercave.com/wp/wp6204460.png');
+    }
+}
+
+
+#part2 {
+    background-image: url('https://i0.wp.com/revuedelatoile.fr/wp-content/uploads/2023/11/joseph4.jpg?fit=1920%2C1080&ssl=1');
+    transition: all 0.8s ease-in-out;
+    max-width: 500px;
+    box-shadow: rgba(210, 180, 140, 0.25) 0px 14px 28px, rgba(210, 180, 140, 0.22) 0px 10px 10px;
+
+
+    &:hover{
+        background-image: url('https://wallpapercave.com/wp/wp4658532.png');
+        box-shadow: rgba(80, 200, 120, 0.25) 0px 14px 28px, rgba(80, 200, 120, 0.22) 0px 10px 10px;
+        background-position: top;
+    }
+}
+
+#part3 {
+    background-image: url('https://animehajime.com/wp-content/uploads/2021/05/jojo-star-crusaders-impressions.jpg');
+    transition: all 0.8s ease-in-out;
+    max-width: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    &:hover{
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d38d7e82-09a1-4542-b8d9-17b26be75f06/d8h4she-34fd2c02-808f-4126-b09c-c147fbfbd425.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QzOGQ3ZTgyLTA5YTEtNDU0Mi1iOGQ5LTE3YjI2YmU3NWYwNlwvZDhoNHNoZS0zNGZkMmMwMi04MDhmLTQxMjYtYjA5Yy1jMTQ3ZmJmYmQ0MjUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H3u4bg-jRlcaHm99TRecKwfX2zq9K4ylsVYGFC5ORxo');
+        box-shadow: rgba(64, 224, 208, 0.25) 0px 14px 28px, rgba(64, 224, 208, 0.22) 0px 10px 10px;
+        background-position: bottom;
+        height : 250px;
+    }
+}
+
+
+#part4 {
+    background-image: url('https://i0.wp.com/cultureweeb.com/wp-content/uploads/2021/09/2115728-e1631383159181.png?fit=1920%2C801&ssl=1');
+    transition: all 0.8s ease-in-out;
+    max-width: 500px;
+    box-shadow: rgba(255, 215, 0, 0.25) 0px 14px 28px, rgba(255, 215, 0, 0.22) 0px 10px 10px;
+
+    &:hover{
+        background-image: url('https://slm-assets.secondlife.com/assets/22468747/view_large/Cm5E370XgAEU50x.jpg?1545817168');
+        box-shadow: rgba(255, 160, 122, 0.25) 0px 14px 28px, rgba(255, 160, 122, 0.22) 0px 10px 10px;
+        background-position: bottom;
+        height : 250px;
+    }
+}
+
+#part5 {
+    background-image: url('https://static.jojowiki.com/images/thumb/5/55/latest/20211006220829/GoldenWind-Promo.png/800px-GoldenWind-Promo.png');
+    transition: all 0.8s ease-in-out;
+    max-width: 500px;
+    height: 400px;
+    box-shadow: rgba(255, 255, 153, 0.25) 0px 14px 28px, rgba(255, 255, 153, 0.22) 0px 10px 10px;
+    background-position: center;
+
+    &:hover{
+        background-image: url('https://i.pinimg.com/736x/15/2e/13/152e133e717b79a7159c102424daa3af.jpg');
+        box-shadow: rgba(210, 105, 30, 0.25) 0px 14px 28px, rgba(210, 105, 30, 0.22) 0px 10px 10px;
+        background-position: bottom;
+        height : 250px;
+    }
+}
+
+#part6 {
+    background-image: url('http://www.anime-kun.net/animes/screenshots/jojo-s-bizarre-adventure-stone-ocean-177447.jpg');
+    transition: all 0.8s ease-in-out;
+    max-width: 500px;
+    height: 360px;
+    box-shadow: rgba(135, 206, 235, 0.25) 0px 14px 28px, rgba(135, 206, 235, 0.22) 0px 10px 10px;
+    background-position: center;
+
+    &:hover{
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/260/804/845/jojo-s-bizarre-adventure-stone-ocean-hd-wallpaper-preview.jpg');
+        box-shadow: rgba(176, 196, 222, 0.25) 0px 14px 28px, rgba(176, 196, 222, 0.22) 0px 10px 10px;
+        height : 250px;
+    }
+}
+
+.part {
+    background-position: center;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height : 200px;
+    min-width: 400px;
+}
+
+
+.flex-items div {
+    width : 100%;
+    border: 1px solid red;
+    margin: auto;
+    max-height : 700px;
+}
+
+.container {
+    max-width: 500px;
+    border-radius: 20px;
+}

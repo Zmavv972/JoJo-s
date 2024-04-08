@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../perso.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Character Details</title>
+</head>
+<body>
+    <div id="character-details">
+        <p>Chargement...</p>
+    </div>
+    <div class="border"></div>
+    <div id="stand-details">
+      <p>Chargement...</p>
+  </div>
+    <script>
+const characterId = 129;
+const standId = 113;
+
+
+const apiUrl = `https://stand-by-me.herokuapp.com/api/v1/characters/${characterId}`;
+
+
+const characterDetailsDiv = document.getElementById('character-details');
+
+
+fetch(apiUrl)
+  .then(response => {
+    // Vérifier si la réponse est ok (status code 200)
+    if (!response.ok) {
+      throw new Error('Erreur de requête réseau');
+    }
+  
+    return response.json();
+  })
+  .then(data => {
+    characterDetailsDiv.innerHTML =
+     `
+     <div class="container">
+  <div class="banner">
+    <span>DIEGO BRANDO</span>
+  </div>
+</div>
+     <div class="info">
+      <img class="pp" src="../images/part7/diego1.png" alt="">
+        <div class="corps">
+          <h1>${data.name}</h1>
+          <p><strong>Capacités:</strong> ${data.abilities}</p>
+          <p><strong>Nationalité:</strong> ${data.nationality}</p>
+          <p><strong>Chapitre:</strong> ${data.chapter}</p>
+          <p><strong>phrase fétiche:</strong> ${data.catchphrase}</p>
+          <p><strong>Humain:</strong> ${data.isHuman ? 'Yes' : 'No'}</p>
+      </div>
+        
+
+    `;
+  })
+  .catch(error => {
+    console.error('Erreur lors de la récupération des données:', error);
+    characterDetailsDiv.innerHTML = '<p>Une erreur s\'est produite lors de la récupération des données.</p>';
+  });
+const apiUrl2 = `https://stand-by-me.herokuapp.com/api/v1/stands/${standId}`;
+
+const standDetailsDiv = document.getElementById('stand-details');
+
+
+fetch(apiUrl2)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erreur de requête réseau');
+    }
+    return response.json();
+  })
+  .then(data => {
+    standDetailsDiv.innerHTML =
+     `
+     <div class="info">
+      <img class="stand" src="../images/part7/sm.png" style="width:250px;" alt="">
+        <div class="corps2">
+          <h1>${data.name}</h1>
+          <p><strong>Nom alternatif:</strong> ${data.alternateName}</p>
+          <p><strong>Chapitre:</strong> ${data.chapter}</p>
+          <p><strong>Capacités:</strong> ${data.abilities}</p>
+          <p><strong>Crie de combat:</strong> ${data.battlecry}</p>
+      </div>
+        
+
+    `;
+  })
+  .catch(error => {
+    console.error('Erreur lors de la récupération des données:', error);
+    standDetailsDiv.innerHTML = '<p>Une erreur s\'est produite lors de la récupération des données.</p>';
+  });
+
+    </script>
+    <nav>
+        <a href="../index.html">Acceuil</a>
+        <a href="../personnages.html">Personnages</a>
+    </nav>
+</body>
+</html>
