@@ -48,7 +48,9 @@ body {
       border: none;
     }
 }
-
+#bannertg {
+  font-size: 45px;
+}
 .corps2 {
   font-size: 17px;
   margin: auto;
@@ -127,15 +129,15 @@ body {
   }
  
 @media  screen and (max-width: 500px) {
-    #bannertg {
-    font-size: 35px;
-}
   html, body {
     overflow-x: hidden;
   }
   body {
     position: relative;
   }
+     #bannertg {
+    font-size: 35px;
+}
 }
 
 
@@ -173,9 +175,7 @@ nav a {
   }
 }
 
-#bannertg {
-  font-size: 45px;
-}
+
 
 /*Jotaro Kujo*/
 #jk {
