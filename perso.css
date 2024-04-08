@@ -126,17 +126,10 @@ body {
     }
   }
  
-@media  screen and (max-width: 450px) {
+@media  screen and (max-width: 500px) {
     #bannertg {
     font-size: 35px;
 }
-  .container {
-    position: absolute;
-    left:-25px;
-    background-color: RGBA(116,158,164,0.5);
-    border: 1px white solid;
-    transform: rotate(-10deg)
-  }
   html, body {
     overflow-x: hidden;
   }
