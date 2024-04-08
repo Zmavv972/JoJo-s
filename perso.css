@@ -129,7 +129,6 @@ body {
 @media  screen and (max-width: 450px) {
   .container {
     position: absolute;
-    left :-25px;
     background-color: RGBA(116,158,164,0.5);
     border: 1px white solid;
     transform: rotate(-10deg);
@@ -140,6 +139,9 @@ body {
   }
   body {
     position: relative;
+  }
+    .banner {
+    font-size: 40px; 
   }
 }
 
