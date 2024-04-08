@@ -95,7 +95,23 @@ body {
   margin: auto;
   max-height: 500px;
 }
-
+@media  screen and (max-width: 500px) {
+     .container {
+    background-color: RGBA(116,158,164,0.5);
+    border: 1px white solid;
+    transform: rotate(-10deg);
+    width: 500px;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+     #bannertg {
+    font-size: 35px;
+}
+}
 .container {
     position: absolute;
     left :-25px;
@@ -128,23 +144,7 @@ body {
     }
   }
  
-@media  screen and (max-width: 500px) {
-     .container {
-    background-color: RGBA(116,158,164,0.5);
-    border: 1px white solid;
-    transform: rotate(-10deg);
-    width: 500px;
-  }
-  html, body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative;
-  }
-     #bannertg {
-    font-size: 35px;
-}
-}
+
 
 
   .border {
