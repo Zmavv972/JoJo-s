@@ -135,7 +135,7 @@ body {
     background-color: RGBA(116,158,164,0.5);
     border: 1px white solid;
     transform: rotate(-10deg);
-    width: 108.5%;
+    width: 500px;
   }
   html, body {
     overflow-x: hidden;
