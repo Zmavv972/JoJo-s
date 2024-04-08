@@ -144,16 +144,6 @@ body {
   body {
     position: relative;
   }
-    .banner {
-    width: 120%;
-    padding-bottom: 10px;
-    font-size: 40px;
-    margin-top: 30px;
-    color : white;
-    white-space: nowrap;
-    overflow: none; 
-    animation: defilement 10s linear infinite; 
-  }
 }
 
 
